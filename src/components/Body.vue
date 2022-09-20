@@ -1,28 +1,73 @@
 <template>
   <v-app class="body-container">
-    <div class="text">
-      <h1>SAVE THE DATE</h1>
+    <div class="body-divider">
+      <img src="divider.png">
     </div>
-      <Countdown class="count-down" end="September 20, 2022">
-      </Countdown>
+    <div class="wedding-text">
+      <h1>SAVE <span>THE</span> DATE</h1>
+      <div class="wedding-date">
+        <h1>SEP | 27 | 2017</h1>
+      </div>
+    </div>
+    <Countdown class="count-down" end="September 24, 2022" />
+    <div class="ring">
+      <img src="ring.png">
+      <div class="img-border">
+        <img src="woman.jpeg">
+        <img src="man.jpeg">  
+      </div>
+    </div>
   </v-app>
 </template>
 
 <script>
 import Countdown from 'vuejs-countdown'
 export default {
-  components: { Countdown }
+  components: { Countdown },
 }
 </script>
 
 <style scoped>
-  .count-down {
-    text-align: center;
+  .ring img {
+    position: relative;
+    top: 100px;
+    width: 200px;
+    height: 200px;
+  }
+  .wedding-text h1 {  
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+  }
+
+  .wedding-date h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal !important;
+  }
+
+  .body-divider img {
     align-content: center;
-    font-display: relative;
+    width: 100%;
+    height: 80px;
+    transform: scaleY(-1);
+  }
+
+  .img-border {
+    width: 100%;
+    position: absolute;
+    top: 5em;
+  }
+
+  .img-border img {
+    border-radius: 50%;
+    margin-top: 5vh;
+    margin-left: 16em;
+    margin-right: 16em;
+  }
+
+  .count-down {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-right: 2.6vh;
   }
 
   .card-rundown {
@@ -47,17 +92,11 @@ export default {
     border-bottom-left-radius: 15px;
   }
 
-  h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    margin: 0;
-    width: 100%;
-    margin-top: 50px;
+  span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal !important;
   }
   p {
     align-content: center;
-    font-size: 20px;
   }
 </style>

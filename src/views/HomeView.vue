@@ -16,7 +16,7 @@
               style="position: absolute; height: 91px; width:91px; margin-left: 17em; margin-top: 5em"
             ></v-img>
             <v-img src="Frame_bottom.png"
-            style="position: absolute; height: 91px; width:91px; margin-left: 70em; margin-top: 34em"
+            style="position: absolute; height: 91px; width:91px; margin-left: 69em; margin-top: 32em"
             ></v-img>
             <div class="wrapper"> 
               <h1>Ega Frandika, B.Sc.IT</h1>
